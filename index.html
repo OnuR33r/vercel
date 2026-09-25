@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SimpleProxy — Browse the web</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Simple<span>Proxy</span></h1>
+    <p class="subtitle">Type a search term or a full web address. Pages load through this server.</p>
+
+    <form action="/go" method="get" class="search-form">
+      <input
+        type="text"
+        name="q"
+        placeholder="Search Google or enter a URL (e.g. example.com)"
+        autocomplete="off"
+        autofocus
+      />
+      <button type="submit">Go</button>
+    </form>
+
+    <p class="hint">This is a self-hosted demo proxy. Run it yourself; only use it for sites you're allowed to access.</p>
+  </main>
+</body>
+</html>
